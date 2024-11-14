@@ -1,0 +1,64 @@
+/* Like Button Container */
+.like-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    padding: 8px 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #333;
+    font-weight: 600;
+    user-select: none;
+  }
+  
+  /* Like Button Hover Effect */
+  .like-button:hover {
+    border-color: #ff6347;
+    background-color: #ffe4e1;
+  }
+  
+  /* Liked Button State */
+  .like-button--liked {
+    border-color: #ff6347;
+    background-color: #ff6347;
+    color: white;
+  }
+  
+  /* Icon Styling */
+  .like-button__icon {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Liked Icon Animation */
+  .like-button--liked .like-button__icon {
+    transform: scale(1.2);
+  }
+  
+  /* Like Count Styling */
+  .like-button__count {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .like-button {
+      padding: 6px 12px;
+      font-size: 1rem;
+    }
+  
+    .like-button__icon {
+      font-size: 1.2rem;
+    }
+  
+    .like-button__count {
+      font-size: 0.9rem;
+    }
+  }
+  

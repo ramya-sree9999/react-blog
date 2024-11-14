@@ -1,0 +1,122 @@
+/* Comment Section Container */
+.comment-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  /* Toggle Button */
+  .comment-section__toggle {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .comment-section__toggle:hover {
+    background-color: #45a049;
+  }
+  
+  /* Comment Form */
+  .comment-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Textarea */
+  .comment-form__input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .comment-form__input:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  /* Submit Button */
+  .comment-form__submit {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .comment-form__submit:hover {
+    background-color: #45a049;
+  }
+  
+  .comment-form__submit:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Comments List */
+  .comments-list {
+    margin-top: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  /* Individual Comment */
+  .comment {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .comment__text {
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  .comment__timestamp {
+    font-size: 0.8rem;
+    color: #777;
+    margin-top: 5px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .comment-section {
+      padding: 15px;
+    }
+  
+    .comment-form__input {
+      font-size: 0.9rem;
+    }
+  
+    .comment-form__submit {
+      font-size: 0.9rem;
+    }
+  
+    .comment__text {
+      font-size: 0.9rem;
+    }
+  
+    .comment__timestamp {
+      font-size: 0.75rem;
+    }
+  }
+  
