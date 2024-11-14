@@ -1,7 +1,6 @@
 import Header from './components/Header';
 import BlogList from './components/BlogList/BlogList';
-import { posts } from "./data/posts";
-
+import { posts } from './data/posts';
 import './App.css';
 
 function App() {
